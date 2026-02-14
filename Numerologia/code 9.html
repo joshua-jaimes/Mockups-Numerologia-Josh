@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Acceso Finanzas Admin</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+            extend: {
+                colors: {
+                "primary": "#7311d4",
+                "background-light": "#f7f6f8",
+                "background-dark": "#191022",
+                "surface-dark": "#241b30",
+                "surface-darker": "#130c1a"
+                },
+                fontFamily: {
+                "display": ["Manrope", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+            },
+            },
+        }
+    </script>
+<style>
+        /* Custom subtle grid pattern for background */
+        .bg-grid-pattern {
+            background-image: linear-gradient(to right, #7311d410 1px, transparent 1px),
+            linear-gradient(to bottom, #7311d410 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-gray-100 min-h-screen flex items-center justify-center p-4 selection:bg-primary selection:text-white">
+<!-- Main Container -->
+<main class="w-full max-w-7xl h-[85vh] rounded-2xl overflow-hidden flex shadow-2xl border border-gray-200 dark:border-white/10 relative">
+<!-- Left Side: Branding & Visuals (Hidden on mobile, visible on lg) -->
+<div class="hidden lg:flex lg:w-1/2 relative bg-surface-darker flex-col justify-between p-12 overflow-hidden">
+<!-- Background Visuals -->
+<div class="absolute inset-0 bg-grid-pattern opacity-20 z-0"></div>
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-[120px] opacity-20 translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary rounded-full blur-[100px] opacity-10 -translate-x-1/2 translate-y-1/2"></div>
+<!-- Content -->
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-purple-900 flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-icons text-white">auto_awesome</span>
+</div>
+<span class="text-2xl font-bold tracking-tight text-white">Numerología AI</span>
+</div>
+<h1 class="text-4xl font-bold text-white mb-6 leading-tight">
+                    Inteligencia financiera <br/>
+<span class="text-primary">segura y predictiva.</span>
+</h1>
+<p class="text-gray-400 text-lg max-w-md">
+                    Gestione las membresías, proyecciones de ingresos y análisis de usuarios desde un entorno encriptado de grado militar.
+                </p>
+</div>
+<!-- Stats/Card Visual -->
+<div class="relative z-10 mt-auto">
+<div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 shadow-xl max-w-sm">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-icons text-green-400 text-sm">fiber_manual_record</span>
+<span class="text-sm font-medium text-gray-300">Estado del Sistema</span>
+</div>
+<span class="text-xs text-primary bg-primary/10 px-2 py-1 rounded border border-primary/20">Operativo</span>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center text-sm">
+<span class="text-gray-400">Gateway de Pagos</span>
+<span class="text-white font-medium flex items-center gap-1"><span class="material-icons text-[14px] text-green-400">check</span> Activo</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-gray-400">Cifrado SSL</span>
+<span class="text-white font-medium flex items-center gap-1"><span class="material-icons text-[14px] text-green-400">lock</span> 256-bit</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-gray-400">Monitor de Fraude AI</span>
+<span class="text-white font-medium flex items-center gap-1"><span class="material-icons text-[14px] text-green-400">visibility</span> Vigilando</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Login Form -->
+<div class="w-full lg:w-1/2 bg-white dark:bg-surface-dark flex flex-col justify-center items-center p-8 lg:p-16 relative">
+<!-- Mobile Logo (visible only on small screens) -->
+<div class="lg:hidden absolute top-8 left-8 flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-primary flex items-center justify-center">
+<span class="material-icons text-white text-sm">auto_awesome</span>
+</div>
+<span class="font-bold text-lg dark:text-white">Numerología AI</span>
+</div>
+<div class="w-full max-w-md space-y-8">
+<!-- Header -->
+<div class="text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold uppercase tracking-wider mb-4">
+<span class="material-icons text-sm">admin_panel_settings</span> Acceso Administrativo
+                    </div>
+<h2 class="text-3xl font-bold text-gray-900 dark:text-white tracking-tight">Portal Financiero</h2>
+<p class="mt-2 text-gray-500 dark:text-gray-400">Ingrese sus credenciales autorizadas para gestionar pagos y analíticas.</p>
+</div>
+<!-- Form -->
+<form action="#" class="mt-8 space-y-6" method="POST">
+<div class="space-y-5">
+<!-- ID Input -->
+<div class="relative group">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="admin-id">ID de Administrador</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-icons text-gray-400 group-focus-within:text-primary transition-colors">badge</span>
+</div>
+<input autocomplete="username" class="block w-full pl-10 pr-3 py-3 border border-gray-300 dark:border-gray-600 rounded-lg leading-5 bg-gray-50 dark:bg-surface-darker/50 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary sm:text-sm transition-all duration-200" id="admin-id" name="id" placeholder="ADM-0000" required="" type="text"/>
+</div>
+</div>
+<!-- Password Input -->
+<div class="relative group">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="password">Contraseña Maestra</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-icons text-gray-400 group-focus-within:text-primary transition-colors">vpn_key</span>
+</div>
+<input autocomplete="current-password" class="block w-full pl-10 pr-10 py-3 border border-gray-300 dark:border-gray-600 rounded-lg leading-5 bg-gray-50 dark:bg-surface-darker/50 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary sm:text-sm transition-all duration-200" id="password" name="password" placeholder="••••••••••••" required="" type="password"/>
+<div class="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer hover:text-gray-300">
+<span class="material-icons text-gray-400 text-sm">visibility_off</span>
+</div>
+</div>
+</div>
+<!-- 2FA Input (Optional Feeling but present for security vibe) -->
+<div class="relative group">
+<div class="flex justify-between items-center mb-1">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="2fa">Código de Seguridad (2FA)</label>
+<span class="text-xs text-primary cursor-pointer hover:text-primary/80">¿Problemas con el token?</span>
+</div>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-icons text-gray-400 group-focus-within:text-primary transition-colors">phonelink_lock</span>
+</div>
+<input class="block w-full pl-10 pr-3 py-3 border border-gray-300 dark:border-gray-600 rounded-lg leading-5 bg-gray-50 dark:bg-surface-darker/50 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary sm:text-sm transition-all duration-200 font-mono tracking-widest" id="2fa" inputmode="numeric" name="2fa" pattern="[0-9]*" placeholder="000 000" type="text"/>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<input class="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded bg-gray-50 dark:bg-gray-700 dark:border-gray-600" id="remember-me" name="remember-me" type="checkbox"/>
+<label class="ml-2 block text-sm text-gray-700 dark:text-gray-400" for="remember-me">
+                                Recordar dispositivo confiable
+                            </label>
+</div>
+</div>
+<div>
+<button class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-surface-dark transition-all duration-200 shadow-lg shadow-primary/25" type="submit">
+<span class="absolute left-0 inset-y-0 flex items-center pl-3">
+<span class="material-icons text-primary-200 group-hover:text-white transition-colors text-sm">lock_open</span>
+</span>
+                            Iniciar Sesión Segura
+                        </button>
+</div>
+</form>
+<!-- Footer Links -->
+<div class="mt-6">
+<div class="relative">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-gray-300 dark:border-gray-700"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="px-2 bg-white dark:bg-surface-dark text-gray-500">Soporte Técnico</span>
+</div>
+</div>
+<div class="mt-6 grid grid-cols-2 gap-3 text-center">
+<a class="text-xs text-gray-500 hover:text-primary transition-colors" href="#">Recuperar Acceso</a>
+<a class="text-xs text-gray-500 hover:text-primary transition-colors" href="#">Reportar Incidente</a>
+</div>
+</div>
+<!-- Security Badge -->
+<div class="mt-8 flex items-center justify-center gap-2 opacity-50 hover:opacity-100 transition-opacity">
+<span class="material-icons text-gray-500 text-sm">verified_user</span>
+<p class="text-[10px] text-gray-500 uppercase tracking-widest text-center">
+                        Conexión Encriptada TLS 1.3
+                    </p>
+</div>
+</div>
+</div>
+</main>
+</body></html>
